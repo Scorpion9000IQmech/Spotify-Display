@@ -1,7 +1,10 @@
 I made a spotify display case, it does a number of things, it is recharchable by a battery module(it is connected to a MT3608 which must be adjusted for 5V output for the esp32), it has holes for both uploading the code as well as charging the battery
+
 as for the display
+
 on startup is shows an animation of a red heart thumping, the text "Manis Music" and "by ahmed" on the screen in green, this lasts for 8 second I beleive
 it switches to a loading... screen
+
 THE MAIN SCREEN shows up which has a bouncing note on the top left, the pakistan flag on the top right
 it has the artist name and track in text that cycles through rainbow colours every 1 second, and the text also has a shadow
 there is a progress bar as well the minutes and second below it of how much of the song is complete
