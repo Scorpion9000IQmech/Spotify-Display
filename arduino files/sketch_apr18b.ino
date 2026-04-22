@@ -3,7 +3,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_ST7735.h>
 #include <WiFi.h>
-#include <SpotifyEsp32.h>
+#include <SpotifyArduino.h>
 #include <SPI.h>
 
 #define TFT_CS 5
@@ -25,12 +25,16 @@ const char* CLIENT_SECRET = "Client secret here";
 
 String lastArtist;
 String lastTrackname;
+String currentArtist;
+String currentTrackname;
 
 int progress = 0;
 int duration = 1;
 int currentVolume = 50; 
 
-Spotify MANI(CLIENT_ID, CLIENT_SECRET);
+WiFiClient spotifyClient;
+
+SpotifyArduino MANI(spotifyClient, CLIENT_ID, CLIENT_SECRET, "YOUR_REFRESH_TOKEN_HERE");
 Adafruit_ST7735 ROSE = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
 
 String truncateText(String text, int maxLength) {
@@ -69,7 +73,7 @@ String animateCapitalLetters(String text, int step) {
     for (int i = 0; i < text.length(); i++) {
         if (i <= step % (text.length() + 1)) {
             // makes letter capital
-            result += String(text[i]).toUpperCase();
+            result += (char)toupper(text[i]);
         } else {
             // keep original case
             result += text[i];
@@ -122,6 +126,20 @@ void drawPakistanFlag() {
     ROSE.fillRect(153, 6, 2, 2, ST77XX_WHITE);
     ROSE.fillRect(154, 5, 1, 1, ST77XX_WHITE);
     ROSE.fillRect(154, 8, 1, 1, ST77XX_WHITE);
+}
+
+void currentlyPlayingCallback(CurrentlyPlaying currentlyPlaying) {
+    // Print EVERYTHING to see what's inside
+    Serial.println("=== TEST ===");
+    
+    // Try different possibilities
+    Serial.println("Artist test: " + String(currentlyPlaying.artists[0].name));
+    Serial.println("Artist name test: " + currentlyPlaying.artists[0].name);
+    
+    // Print raw data if possible
+    Serial.println("Raw artists: " + currentlyPlaying.artists[0]);
+    
+    Serial.println("=== END TEST ===");
 }
 
 void setup() {
@@ -220,11 +238,6 @@ void setup() {
     ROSE.setCursor(0,0); // make the cursor at the top left
     ROSE.write(WiFi.localIP().toString().c_str()); // print out IP on the screen
 
-    MANI.begin();
-    while(!MANI.is_auth()){
-        MANI.handle_client();
-    }
-    Serial.println("Authenticated");
 }
 
 void loop()
@@ -233,42 +246,35 @@ void loop()
     static int colorCycle = 0;  
 
     if (digitalRead(BTN_NEXT) == LOW) {
-       MANI.skip_to_next();
+       MANI.nextTrack();
        delay(300);
     }
 
     if (digitalRead(BTN_PREV) == LOW) {
-        MANI.skip_to_previous();
+        MANI.previousTrack();
         delay(300);
     }
 
     if (digitalRead(BTN_PLAY) == LOW) {
-        if (MANI.is_playing()) {
-            MANI.pause_playback();
-        } else {
-            MANI.start_a_users_playback();
-        }
+        MANI.play();
         delay(300);
     }
 
     if (digitalRead(BTN_VOL_UP) == LOW) {
     currentVolume += 5;
     if (currentVolume > 100) currentVolume = 100;
-    MANI.set_volume(currentVolume);
+    MANI.setVolume(currentVolume);
     delay(200);
     }
 
     if (digitalRead(BTN_VOL_DOWN) == LOW) {
     currentVolume -= 5;
     if (currentVolume < 0) currentVolume = 0;
-    MANI.set_volume(currentVolume);
+    MANI.setVolume(currentVolume);
     delay(200);
     }
 
-    String currentArtist = truncateText(MANI.current_artist_names(), 14);
-    String currentTrackname = truncateText(MANI.current_track_name(), 18);
-    progress = MANI.get_progress_ms();
-    duration = MANI.get_duration_ms();
+    MANI.getCurrentlyPlaying(currentlyPlayingCallback);
 
     drawProgressBar(progress, duration);
     drawTimeCounter(progress, duration);
