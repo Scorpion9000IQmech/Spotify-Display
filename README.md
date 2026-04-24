@@ -20,3 +20,5 @@ inside the case there is a space for the screen, screw holes to latch it on, as 
 this is the final, with the space for for all componets to sit securely in the case, and for it to securely close, as well as a heart in which an led will sit to make it glow, the case has multiple things
 
 <img width="860" height="759" alt="WhatsApp Image 2026-04-22 at 21 19 17" src="https://github.com/user-attachments/assets/f3a72b09-598f-4174-adb6-e3c8639908d0" />
+
+iM GOING TO PAY FOR THIS ALL MYSELF
