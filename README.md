@@ -12,11 +12,14 @@ there is also a volume bar which changes by increments of 5, starting at 50 perc
 the case as a whole has 6 buttons: next, play/pause, previous, Vol up, vol down, on/off
 the screen is in the front of the case, the case has a lid at the back that can be latched on and off
 inside the case there is a space for the screen, screw holes to latch it on, as well as a place for the ESP32 which also has holes to latch it on with a bolt or screw, there is a space for the USB C charging module as well, the battery securing spot and the power boosters secure spot
+I also have spots for the keyswitches to sit securely
 
-
+<img width="1186" height="789" alt="image" src="https://github.com/user-attachments/assets/8b332b0f-fd3c-4529-8ed3-a8b5c2014bed" />
+<img width="1041" height="762" alt="image" src="https://github.com/user-attachments/assets/b7778115-f3c0-4654-96eb-3994b6b5d3dc" />
+<img width="970" height="635" alt="image" src="https://github.com/user-attachments/assets/54234aed-3c26-4994-9d94-86b6123ce8cb" />
+<img width="1256" height="544" alt="image" src="https://github.com/user-attachments/assets/b9799383-4bd3-4cc0-b2e8-b63d39d13251" />
+<img width="1227" height="412" alt="image" src="https://github.com/user-attachments/assets/fb133b27-c106-4e66-ac8c-bef2e85924fa" />
 
 this is the final, with the space for for all componets to sit securely in the case, and for it to securely close, as well as a heart in which an led will sit to make it glow, the case has multiple things
-
-<img width="860" height="759" alt="WhatsApp Image 2026-04-22 at 21 19 17" src="https://github.com/user-attachments/assets/f3a72b09-598f-4174-adb6-e3c8639908d0" />
 
 iM GOING TO PAY FOR THIS ALL MYSELF
