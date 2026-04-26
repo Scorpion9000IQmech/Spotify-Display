@@ -24,14 +24,14 @@ this is the final, with the space for for all componets to sit securely in the c
 
 iM GOING TO PAY FOR THIS ALL MYSELF
 
-DISPLAYparts,cost USD,where to get from/link,,
-3d printer parts,133 g(diff filaments diff cost but about 1.8 USD),I get my filament from microless and print with my personal printer,,
-Keyboard switches(better reliability),7 USD(pakistan local online shop/I suggest getting from another for obvious reasons),https://www.daraz.pk/products/mechanical-keyboard-switches-3-pin-rgb-hot-swappable-blue-red-brown-black-silent-tactile-switches-for-gaming-keyboard-70-million-clicks-durability-pc-gaming-keyboard-accessories-diy-keyboard-switches-set-i936558752-s3994103046.html,,
-ST7735 SPI,4.29 USD,https://ar.aliexpress.com/item/1005010340668858.html?spm=a2g0o.order_list.order_list_main.40.15e2180255B5UM&gatewayAdapt=glo2ara,,
-C3 MINI LOLIN,14.36 USD,https://ar.aliexpress.com/item/1005004740051202.html?spm=a2g0o.order_list.order_list_main.4.15e2180255B5UM&gatewayAdapt=glo2ara,,
-BATTERY 3.7V LiPo rechargeable,2 for 3.9 USD each,(local),,
-TP4056 with protection(MIcro usb-c),USD 2.32,https://ar.aliexpress.com/item/1005007355163444.html?spm=a2g0o.order_list.order_list_main.28.15e2180255B5UM&gatewayAdapt=glo2ara,,
-MT3608 step up converter power booster supply module, USD 8.14, https://ar.aliexpress.com/item/1005012043861306.html?spm=a2g0o.order_list.order_list_main.16.15e2180255B5UM&gatewayAdapt=glo2ara,,
-6 M3 screws for the screen,depends on your local source,Local bought,,
-multimeter to adjust boost converter,13 USD,(local),,
-TOTAL cost(just the case and componets),40 USD,,,
+DISPLAYparts|cost USD|where to get from/link|
+3d printer parts|133 g(diff filaments diff cost but about 1.8 USD)|I get my filament from microless and print with my personal printer|
+Keyboard switches(better reliability)|7 USD(pakistan local online shop/I suggest getting from another for obvious reasons)|https://www.daraz.pk/products/mechanical-keyboard-switches-3-pin-rgb-hot-swappable-blue-red-brown-black-silent-tactile-switches-for-gaming-keyboard-70-million-clicks-durability-pc-gaming-keyboard-accessories-diy-keyboard-switches-set-i936558752-s3994103046.html|
+ST7735 SPI|4.29 USD|https://ar.aliexpress.com/item/1005010340668858.html?spm=a2g0o.order_list.order_list_main.40.15e2180255B5UM&gatewayAdapt=glo2ara|
+C3 MINI LOLIN|14.36 USD|https://ar.aliexpress.com/item/1005004740051202.html?spm=a2g0o.order_list.order_list_main.4.15e2180255B5UM&gatewayAdapt=glo2ara|
+BATTERY 3.7V LiPo rechargeable|2 for 3.9 USD each|(local)|
+TP4056 with protection(MIcro usb-c)|USD 2.32|https://ar.aliexpress.com/item/1005007355163444.html?spm=a2g0o.order_list.order_list_main.28.15e2180255B5UM&gatewayAdapt=glo2ara|
+MT3608 step up converter power booster supply module|USD 8.14|https://ar.aliexpress.com/item/1005012043861306.html?spm=a2g0o.order_list.order_list_main.16.15e2180255B5UM&gatewayAdapt=glo2ara|
+6 M3 screws for the screen|depends on your local source|Local bought|
+multimeter to adjust boost converter|13 USD,(local)||
+TOTAL cost(just the case and componets)|40 USD||
