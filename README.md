@@ -1,5 +1,6 @@
+## Spotify Display
+---
 I made a spotify display case, it does a number of things, it is recharchable by a battery module(it is connected to a MT3608 which must be adjusted for 5V output for the esp32), it has holes for both uploading the code as well as charging the battery
-
 as for the display
 
 on startup is shows an animation of a red heart thumping, the text "Manis Music" and "by ahmed" on the screen in green, this lasts for 8 second I beleive
@@ -39,17 +40,5 @@ iM GOING TO PAY FOR THIS ALL MYSELF
 | multimeter to adjust boost converter | 13 USD,(local) | - |
 | **TOTAL cost(just the case and componets)** | **40 USD** | - |
 
-## Parts List
 
-| Part | Cost | Where to Get / Link |
-|------|------|---------------------|
-| 3D printer parts (133g) | ~1.80 USD | Microless (personal printer) |
-| Keyboard switches | 7 USD | [Daraz Pakistan](https://www.daraz.pk/products/mechanical-keyboard-switches-3-pin-rgb-hot-swappable-blue-red-brown-black-silent-tactile-switches-for-gaming-keyboard-70-million-clicks-durability-pc-gaming-keyboard-accessories-diy-keyboard-switches-set-i936558752-s3994103046.html) |
-| ST7735 SPI | 4.29 USD | [AliExpress](https://ar.aliexpress.com/item/1005010340668858.html) |
-| C3 MINI LOLIN | 14.36 USD | [AliExpress](https://ar.aliexpress.com/item/1005004740051202.html) |
-| Battery 3.7V LiPo | 3.90 USD each | Local |
-| TP4056 (Micro USB-C) | 2.32 USD | [AliExpress](https://ar.aliexpress.com/item/1005007355163444.html) |
-| MT3608 step up converter | 8.14 USD | [AliExpress](https://ar.aliexpress.com/item/1005012043861306.html) |
-| M3 screws (6 pieces) | Local price | Local |
-| Multimeter | 13 USD | Local |
-| **TOTAL** | **~40 USD** | — |
+
