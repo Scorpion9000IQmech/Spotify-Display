@@ -1,7 +1,8 @@
 ## Spotify Display
 ---
 I made a spotify display case, it does a number of things, it is recharchable by a battery module(it is connected to a MT3608 which must be adjusted for 5V output for the esp32), it has holes for both uploading the code as well as charging the battery
-as for the display
+
+###### Display
 
 on startup is shows an animation of a red heart thumping, the text "Manis Music" and "by ahmed" on the screen in green, this lasts for 8 second I beleive
 it switches to a loading... screen
