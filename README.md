@@ -31,8 +31,22 @@ ST7735 SPI|4.29 USD|https://ar.aliexpress.com/item/1005010340668858.html?spm=a2g
 C3 MINI LOLIN|14.36 USD|https://ar.aliexpress.com/item/1005004740051202.html?spm=a2g0o.order_list.order_list_main.4.15e2180255B5UM&gatewayAdapt=glo2ara|
 BATTERY 3.7V LiPo rechargeable|2 for 3.9 USD each|(local)|
 TP4056 with protection(MIcro usb-c)|USD 2.32|https://ar.aliexpress.com/item/1005007355163444.html?spm=a2g0o.order_list.order_list_main.28.15e2180255B5UM&gatewayAdapt=glo2ara|
-
 MT3608 step up converter power booster supply module|USD 8.14|https://ar.aliexpress.com/item/1005012043861306.html?spm=a2g0o.order_list.order_list_main.16.15e2180255B5UM&gatewayAdapt=glo2ara|
 6 M3 screws for the screen|depends on your local source|Local bought|
 multimeter to adjust boost converter|13 USD,(local)||
 TOTAL cost(just the case and componets)|40 USD||
+
+## Parts List
+
+| Part | Cost | Where to Get / Link |
+|------|------|---------------------|
+| 3D printer parts (133g) | ~1.80 USD | Microless (personal printer) |
+| Keyboard switches | 7 USD | [Daraz Pakistan](https://www.daraz.pk/products/mechanical-keyboard-switches-3-pin-rgb-hot-swappable-blue-red-brown-black-silent-tactile-switches-for-gaming-keyboard-70-million-clicks-durability-pc-gaming-keyboard-accessories-diy-keyboard-switches-set-i936558752-s3994103046.html) |
+| ST7735 SPI | 4.29 USD | [AliExpress](https://ar.aliexpress.com/item/1005010340668858.html) |
+| C3 MINI LOLIN | 14.36 USD | [AliExpress](https://ar.aliexpress.com/item/1005004740051202.html) |
+| Battery 3.7V LiPo | 3.90 USD each | Local |
+| TP4056 (Micro USB-C) | 2.32 USD | [AliExpress](https://ar.aliexpress.com/item/1005007355163444.html) |
+| MT3608 step up converter | 8.14 USD | [AliExpress](https://ar.aliexpress.com/item/1005012043861306.html) |
+| M3 screws (6 pieces) | Local price | Local |
+| Multimeter | 13 USD | Local |
+| **TOTAL** | **~40 USD** | — |
