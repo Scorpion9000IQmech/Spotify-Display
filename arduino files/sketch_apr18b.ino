@@ -6,17 +6,16 @@
 #include <SpotifyArduino.h>
 #include <SPI.h>
 
-#define TFT_CS 5
-#define TFT_RST 4
-#define TFT_DC 2
+#define TFT_CS 10
+#define TFT_RST 2
+#define TFT_DC 3
 #define TFT_SCLK 6
 #define TFT_MOSI 7
-#define BTN_NEXT 8
-#define BTN_PREV 10
-#define BTN_PLAY 3
-#define BTN_VOL_UP 9
-#define BTN_VOL_DOWN 20
-#define BTN_EXTRA 21
+#define BTN_NEXT 0
+#define BTN_PREV 4
+#define BTN_PLAY 1
+#define BTN_VOL_UP 8
+#define BTN_VOL_DOWN 5
 
 char* SSID = "YOUR WIFI SSID";
 const char* PASSWORD = "YOUR WIFI PASSWORD";
@@ -129,17 +128,27 @@ void drawPakistanFlag() {
 }
 
 void currentlyPlayingCallback(CurrentlyPlaying currentlyPlaying) {
-    // Print EVERYTHING to see what's inside
-    Serial.println("=== TEST ===");
-    
-    // Try different possibilities
-    Serial.println("Artist test: " + String(currentlyPlaying.artists[0].name));
-    Serial.println("Artist name test: " + currentlyPlaying.artists[0].name);
-    
-    // Print raw data if possible
-    Serial.println("Raw artists: " + currentlyPlaying.artists[0]);
-    
-    Serial.println("=== END TEST ===");
+
+    if (currentlyPlaying.error) {
+        Serial.println("Spotify error!");
+        return;
+    }
+
+    if (currentlyPlaying.isPlaying) {
+
+        currentArtist = currentlyPlaying.artists[0].name;
+        currentTrackname = currentlyPlaying.trackName;
+
+        progress = currentlyPlaying.progressMs;
+        duration = currentlyPlaying.durationMs;
+
+    }
+
+    else {
+        currentArtist = "No data";
+        currentTrackname = "No data";
+    }
+
 }
 
 void setup() {
@@ -150,7 +159,6 @@ void setup() {
     pinMode(BTN_PLAY, INPUT_PULLUP);
     pinMode(BTN_VOL_UP, INPUT_PULLUP);
     pinMode(BTN_VOL_DOWN, INPUT_PULLUP);
-    pinMode(BTN_EXTRA, INPUT_PULLUP);
 
     ROSE.initR(INITR_BLACKTAB); // the type of screen
     ROSE.setRotation(1); // this makes the screen landscape! remove this line for portrait
