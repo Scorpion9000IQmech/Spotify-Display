@@ -25,6 +25,9 @@ I also have spots for the keyswitches to sit securely
 <img width="1256" height="544" alt="image" src="https://github.com/user-attachments/assets/b9799383-4bd3-4cc0-b2e8-b63d39d13251" />
 <img width="1227" height="412" alt="image" src="https://github.com/user-attachments/assets/fb133b27-c106-4e66-ac8c-bef2e85924fa" />
 
+### wiring diagram
+---
+<img width="1196" height="832" alt="image" src="https://github.com/user-attachments/assets/47004a0d-01a6-46e4-81a0-8cc8c54c44f9" />
 
 this is the final, with the space for for all componets to sit securely in the case, and for it to securely close, as well as a heart in which an led will glow during certain actions, the case has multiple things, and I plan on adding buzzers to play melodys for some songs, or simply for the startup animation
 
