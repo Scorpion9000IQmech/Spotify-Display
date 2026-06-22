@@ -1,36 +1,37 @@
 ## Spotify Display
 ---
-I made a spotify display case, it does a number of things, it is recharchable by a battery module(it is connected to a MT3608 which must be adjusted for 5V output for the esp32), it has holes for both uploading the code as well as charging the battery
+I made a spotify display case, it does a number of things, it is recharchable by a battery module(it is connected to a TP4056 charging module with 3.3V output for the esp32), it has holes for both uploading the code as well as charging the battery
 
 ### Display
 #### Startup
 on startup is shows an animation of a red heart thumping, the text "Manis Music" and "by ahmed" on the screen in green, this lasts for 8 second I beleive
 it switches to a loading... screen
 #### Main screen
-THE MAIN SCREEN shows up which has a bouncing note on the top left, the pakistan flag on the top right
+THE MAIN SCREEN shows up which has the pakistan flag on the top right
 it has the artist name and track in text that cycles through rainbow colours every 1 second, and the text also has a shadow
 there is a progress bar as well the minutes and second below it of how much of the song is complete
-there is also a volume bar which changes by increments of 5, starting at 50 percent on startup, this can be contorlled by the volume up and down buttons
-the case as a whole has 6 buttons: next, play/pause, previous, Vol up, vol down, on/off
+there is also a volume bar which changes by increments of 5, starting at 50 percent on startup, this can be contorlled by the volume up and down buttons(this changes the spotify volume, does not work on mobile spotify, only desktop)
+the case as a whole has 5 buttons: next, play/pause, previous, Vol up, vol down
 #### The Case layout
 the screen is in the front of the case, the case has a lid at the back that can be latched on and off.
-inside the case there is a space for the screen, screw holes to latch it on, as well as a place for the ESP32 which also has holes to latch it on with a bolt or screw, there is a space for the USB C charging module as well as the battery securing spot and the power booster securing spot
+inside the case there is a space for the screen, screw holes to latch it on, as well as a place for the ESP32 which also has holes to latch it on with a bolt or screw, there is a space for the USB C charging module as well as the battery securing spot.
 I also have spots for the keyswitches to sit securely
 
 ### Example Images
 ---
-<img width="1186" height="789" alt="image" src="https://github.com/user-attachments/assets/8b332b0f-fd3c-4529-8ed3-a8b5c2014bed" />
-<img width="1041" height="762" alt="image" src="https://github.com/user-attachments/assets/b7778115-f3c0-4654-96eb-3994b6b5d3dc" />
-<img width="970" height="635" alt="image" src="https://github.com/user-attachments/assets/54234aed-3c26-4994-9d94-86b6123ce8cb" />
-<img width="1256" height="544" alt="image" src="https://github.com/user-attachments/assets/b9799383-4bd3-4cc0-b2e8-b63d39d13251" />
+<img width="1100" height="750" alt="image" src="https://github.com/user-attachments/assets/b943b6e9-f9e5-430e-abf4-5fcda510fce7" />
+<img width="953" height="715" alt="image" src="https://github.com/user-attachments/assets/f2205d7b-c61c-46a9-ba88-062878ddb63d" />
+<img width="1021" height="628" alt="image" src="https://github.com/user-attachments/assets/e74c8c5e-2935-4362-9aac-0d8250ab96dc" />
+<img width="1154" height="506" alt="image" src="https://github.com/user-attachments/assets/cc293a77-3b60-4b63-bc40-4f0dbdad194b" />
 <img width="1227" height="412" alt="image" src="https://github.com/user-attachments/assets/fb133b27-c106-4e66-ac8c-bef2e85924fa" />
 
 ### wiring diagram
 ---
-<img width="809" height="519" alt="image" src="https://github.com/user-attachments/assets/176c72f9-fe64-48b7-8e08-a25ec6ee3b67" />
+<img width="890" height="545" alt="image" src="https://github.com/user-attachments/assets/7fb1581b-f311-4a84-af12-2840e7bba404" />
 
 
-this is the final, with the space for for all componets to sit securely in the case, and for it to securely close, as well as a heart in which an led will glow during certain actions, the case has multiple things, and I plan on adding buzzers to play melodys for some songs, or simply for the startup animation
+
+this is the final, with the space for for all componets to sit securely in the case, and for it to securely close, as well as a heart in which an led will glow, preferrably red!!!
 
 ### IM GOING TO PAY FOR THIS ALL MYSELF
 
@@ -44,10 +45,31 @@ this is the final, with the space for for all componets to sit securely in the c
 | C3 MINI LOLIN | 14.36 USD | [Ali Express](https://ar.aliexpress.com/item/1005004740051202.html?spm=a2g0o.order_list.order_list_main.4.15e2180255B5UM&gatewayAdapt=glo2ara) |
 | BATTERY 3.7V LiPo rechargeable | 2 for 3.9 USD each | (local) |
 | TP4056 with protection(MIcro usb-c) | USD 2.32 | [Ali Express](https://ar.aliexpress.com/item/1005007355163444.html?spm=a2g0o.order_list.order_list_main.28.15e2180255B5UM&gatewayAdapt=glo2ara) |
-| MT3608 step up converter power booster supply module | USD 8.14 | [Ali Express](https://ar.aliexpress.com/item/1005012043861306.html?spm=a2g0o.order_list.order_list_main.16.15e2180255B5UM&gatewayAdapt=glo2ara) |
 | 6 M3 screws for the screen|depends on your local source | Local bought |
 | multimeter to adjust boost converter | 13 USD,(local) | - |
 | **TOTAL cost(just the case and componets)** | **40 USD** | - |
 
+# FINAL EXAMPLE IMAGES
+---
+### the esp32, tp4056 and battery are shown here below all of the messy wiring
+<img width="1600" height="721" alt="image" src="https://github.com/user-attachments/assets/47309561-ddeb-4cae-a4ed-05d317fe5405" />
 
+### the front showing the display, and what it is displaying
+<img width="381" height="691" alt="image" src="https://github.com/user-attachments/assets/d72bbe22-64b6-47df-a3cc-29a228ee27a7" />
 
+this shows the artist, song, progress of song, and the volume percent, once paused it stops the progress, volume bar changes with the press of the buttons, and it switches every refresh when a new song is played, with previous or next buttons
+
+### the door
+<img width="1600" height="721" alt="image" src="https://github.com/user-attachments/assets/be794686-9e0e-4502-b1f0-4250800d49f5" />
+
+the door obviously has space for the two usb ports to work
+
+### the keyswitches on top
+<img width="366" height="731" alt="image" src="https://github.com/user-attachments/assets/fcf31d68-0c5c-4640-9cec-a73e2fca116f" />
+
+all 6 keyswitches, play/pause on the bottom right, next middle bottom, previous is bottom left, vol down button on the top right, and vol up button on the top left, of course the orientation of these changes depending on which pin the wire connected is in each keyslot, but the upper middle button does nothing as of now, it is meant to be for an extra purpose, such as on/off, or to toggle the led which can be kept in the heart, additionallyt if put between the power bus or GND bus, it can be used to restart the display, rerunning the animation, thats what it does for me as of now, a reset button
+
+### the esp32, tp4056 and battery meant to be used
+<img width="475" height="479" alt="image" src="https://github.com/user-attachments/assets/17d3e2ef-4a24-47d6-ad77-297e98559431" />
+<img width="136" height="221" alt="image" src="https://github.com/user-attachments/assets/528e2d56-09c2-45a0-9a53-d17f402559c7" />
+<img width="290" height="394" alt="image" src="https://github.com/user-attachments/assets/9ccfd4ff-98c3-4ec0-bc86-f206ceb134bc" />
