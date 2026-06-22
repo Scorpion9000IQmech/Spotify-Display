@@ -49,6 +49,16 @@ this is the final, with the space for for all componets to sit securely in the c
 | multimeter to adjust boost converter | 13 USD,(local) | - |
 | **TOTAL cost(just the case and componets)** | **40 USD** | - |
 
+# Step by step tutorial/explanation
+---
+1. upload the code to the esp32, and fill in the internet information, client information from spotify, and the refresh token that you can create, here(https://spotify-refresh-token-generator.netlify.app/#info)
+2. solder header pins to the esp32 and the display board, solder the battery to the mt3608 charger module
+3. connect the esp32 and display with dupont wires
+4. connect the mt3608 to the LED/VCC from display and the 3v3 pin on esp32, this needs to be solered together into a bus, as its 3 wires for one connection, I personally soldered them all to one wire and used that wire to connect to the mt3608 VOUT+
+5. use the dupont wires with pins on the other end to connect to the button pins on the esp32, solder the pin end to one end of the key, solder a normal wire with two pins to the other end, as this will be the ground
+6. at this point everything is connected if youve gone by the wiring diagram, the code uploaded, and once all the ground wires are connected into one bus, and connected to mt3608 VOUT-, then the display should power on, from here it plays the animation, and displays the song playing, buttons are in the order you arranged them.
+
+
 # FINAL EXAMPLE IMAGES
 ---
 ### the esp32, tp4056 and battery are shown here below all of the messy wiring
