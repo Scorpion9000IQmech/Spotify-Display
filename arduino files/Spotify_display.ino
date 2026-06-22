@@ -20,10 +20,10 @@
 #define BTN_VOL_UP 8
 #define BTN_VOL_DOWN 5
 
-const char* SSID = "AhmedAli2.4G_EXT";
-const char* PASSWORD = "Ishfaque";
-const char* CLIENT_ID = "efc9b3323f5c423f9299b7453264254a";
-const char* CLIENT_SECRET = "9a4407aeb57e486c855c03857f4ae774";
+const char* SSID = "example";
+const char* PASSWORD = "example";
+const char* CLIENT_ID = "example";
+const char* CLIENT_SECRET = "example";
 
 unsigned long lastSpotifyUpdate = 0;
 const int spotifyInterval = 4000;
@@ -174,7 +174,6 @@ void currentlyPlayingCallback(CurrentlyPlaying currentlyPlaying) {
 
     lastLocalUpdate = millis();
 
-    // detect new song ONLY for animations
     static String prevTrack = "";
 
     if (currentTrackname != prevTrack) {
@@ -196,10 +195,6 @@ void setup() {
     pinMode(BTN_PLAY, INPUT_PULLUP);
     pinMode(BTN_VOL_UP, INPUT_PULLUP);
     pinMode(BTN_VOL_DOWN, INPUT_PULLUP);
-
-    Serial.println("1");
-
-
 
     SPI.begin(TFT_SCLK, -1, TFT_MOSI, TFT_CS);
 
@@ -340,8 +335,6 @@ void setup() {
         return;
     }
 
-    Serial.println("3");
-
     spotifyClient.setInsecure();
     spotifyClient.setTimeout(15000);
     delay(1000);
@@ -355,10 +348,8 @@ void setup() {
     Serial.println("DNS FAILED");
     }
 
-    MANI.setRefreshToken("AQAGvEcU3IFutksX-ZwhuGU5HzzydMnZNU3SmOzUyqz8AdO760G7xFRiH_0ByRsRmENwqXhinFLC65DGcae4VV2JLmmHvr7gfEVsJGz9uGDUJky3wh-8eaTfu-cE5hizhGg");
+    MANI.setRefreshToken("refresh token");
     MANI.refreshAccessToken();
-
-    Serial.println("4");
 
     MANI.getCurrentlyPlaying(currentlyPlayingCallback);
 
